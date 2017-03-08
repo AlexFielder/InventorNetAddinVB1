@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+  <assemblyIdentity
+    name="MyVBInventorAddin"
+    version="1.0.0.0">
+  </assemblyIdentity>
+  <clrClass
+    clsid="{c9424b68-1aa4-49fb-a4f2-2fa6c267ce35}"
+    progid="InventorNetAddinVB1.MyVBInventorAddin"
+    threadingModel="Both"
+    name="InventorNetAddinVB1.MyVBInventorAddin"
+    runtimeVersion="">
+  </clrClass>
+  <file name="InventorNetAddinVB1.dll"></file>
+</assembly>
