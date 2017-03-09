@@ -39,7 +39,7 @@ Public Class MyVBInventorAddin
         Try
             AddinGlobal.GetAddinClassId(Me.GetType())
 
-            Dim icon1 As New Icon(Assembly.GetExecutingAssembly().GetManifestResourceStream("addin.ico"))
+            Dim icon1 As New Icon(Assembly.GetExecutingAssembly().GetManifestResourceStream("InventorNetAddinVB1.addin.ico"))
             'Change it if necessary but make sure it's embedded.
             Dim button1 As New InventorButton("Button 1", "MyVBInventorAddin.Button_" & Guid.NewGuid().ToString(), "Button 1 description", "Button 1 tooltip", icon1, icon1,
                 CommandTypesEnum.kShapeEditCmdType, ButtonDisplayEnum.kDisplayTextInLearningMode)

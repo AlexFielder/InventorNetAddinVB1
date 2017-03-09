@@ -4,7 +4,7 @@
   <ClientId>{c9424b68-1aa4-49fb-a4f2-2fa6c267ce35}</ClientId>
   <DisplayName>InventorAddinServer</DisplayName>
   <Description>InventorAddinServer</Description>
-  <Assembly>c:/users/alex/documents/visual studio 2015/Projects/InventorNetAddinVB1/InventorNetAddinVB1/bin/Debug/InventorNetAddinVB1.dll</Assembly>
+  <Assembly>InventorNetAddinVB1.dll</Assembly>
   <LoadBehavior>0</LoadBehavior>
   <UserUnloadable>1</UserUnloadable>
   <Hidden>0</Hidden>

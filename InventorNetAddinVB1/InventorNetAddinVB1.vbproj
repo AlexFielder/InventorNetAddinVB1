@@ -122,12 +122,15 @@
     <Content Include="..\..\..\..\..\AppData\Roaming\Autodesk\Inventor 21.20\Addins\InventorNetAddinVB1 - Test.Addin">
       <Link>InventorNetAddinVB1 - Test.Addin</Link>
     </Content>
-    <Content Include="InventorNetAddinVB1.Addin" />
+    <Content Include="InventorNetAddinVB1.Addin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="ReadMe.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <PropertyGroup>
-    <PostBuildEvent>"C:\Program Files (x86)\InventorNetAddinWizardPRO\Bin\mt.exe" -manifest "$(ProjectDir)InventorNetAddinVB1.X.manifest" -outputresource:"$(TargetPath)";#5</PostBuildEvent>
+    <PostBuildEvent>"C:\Program Files (x86)\InventorNetAddinWizardPRO\Bin\mt.exe" -manifest "$(ProjectDir)InventorNetAddinVB1.X.manifest" -outputresource:"$(TargetPath)";#5
+XCopy "$(TargetDir)*.*" "%25ALLUSERSPROFILE%25\Autodesk\ApplicationPlugins\$(TargetName)\*.*" /Y /R</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
